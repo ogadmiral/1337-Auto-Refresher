@@ -1,6 +1,6 @@
 let intervalId = null;
 
-// ⬇️ After reload, scroll to bottom several times to override layout shifts
+// After reload, scroll to bottom several times to override layout shifts
 window.addEventListener("load", () => {
   if (localStorage.getItem("scrollToBottomAfterReload") === "true") {
     let count = 0;
@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// 🔁 Auto-refresh every 15 seconds with scroll flag
+// Auto-refresh (every 15 seconds in default) with scroll flag
 function startAutoRefresh(interval) {
   if (intervalId) clearInterval(intervalId);
 
@@ -30,7 +30,7 @@ function stopAutoRefresh() {
   intervalId = null;
 }
 
-// ⏱ Load settings
+// Load settings
 chrome.storage.sync.get(["enabled", "interval"], (data) => {
   if (data.enabled) {
     startAutoRefresh(data.interval || 15);
