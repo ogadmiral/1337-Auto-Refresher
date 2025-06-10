@@ -8,6 +8,10 @@
       "default_popup": "popup.html",
       "default_title": "1337 Auto Refresh & Scroll"
     },
+    "icons": {
+    "48": "./icon.png"
+    },
+
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
