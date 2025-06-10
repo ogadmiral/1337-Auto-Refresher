@@ -1,4 +1,5 @@
-# 1337-Auto-Refresher
+<img src="./1337-Auto-Refresher-Extenstion/logo-png.png">
+# 1337-Auto-Refresher & Scroller
 A Chrome Extenstion for 1337 Coding school to refresh checkin/pool page and scroll at the same time to solve checkin/pool area doesn't show automaticly problem.
 
 # How to Install & Use the extenstion
