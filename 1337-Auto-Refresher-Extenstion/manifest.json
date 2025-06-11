@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "1337 Auto Refresh & Scroll",
-    "version": "1.2",
+    "version": "1.2.1",
     "description": "Refreshes the page every X seconds and scrolls to the top.",
     "permissions": ["storage", "scripting", "activeTab"],
     "action": {
@@ -14,7 +14,10 @@
 
     "content_scripts": [
       {
-        "matches": ["<all_urls>"],
+        "matches": [
+          "https://admission.1337.ma/*",
+          "https://1337.ma/*"
+        ],
         "js": ["content.js"]
       }
     ]
